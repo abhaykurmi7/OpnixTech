@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== BASE ===== */
+body {
+  background: #f8fbff;              /* clean white */
+  color: #0f172a;                   /* deep blue text */
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e6efff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+
+.navbar a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #2563eb;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 120px 8%;
+  background: linear-gradient(
+    180deg,
+    #f8fbff 0%,
+    #eaf3ff 100%
+  );
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.hero p {
+  max-width: 700px;
+  color: #475569;
+  font-size: 18px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 34px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.35);
+}
+
+/* ===== FEATURES & SERVICES ===== */
+.features,
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 80px 8%;
+}
+
+.feature,
+.service-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #e6efff;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.feature h3,
+.service-card h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #0f172a;
+}
+
+.feature p,
+.service-card p {
+  color: #475569;
+  font-size: 15px;
+}
+
+.feature:hover,
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(56, 189, 248, 0.25);
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  padding: 80px 8% 40px;
+}
+
+.page-header h1 {
+  font-size: 40px;
+  color: #0f172a;
+}
+
+/* ===== ABOUT & CONTACT ===== */
+.about,
+.contact {
+  padding: 40px 8%;
+  max-width: 800px;
+}
+
+.about p,
+.contact p {
+  color: #475569;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+
+/* ===== CTA SECTION ===== */
+.cta {
+  margin: 80px 8%;
+  padding: 80px 40px;
+  border-radius: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #eaf3ff, #f8fbff);
+  border: 1px solid #e6efff;
+}
+
+.cta h2 {
+  font-size: 36px;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: #475569;
+}
+
+/* Responsive CTA */
+@media (max-width: 768px) {
+  .cta {
+    padding: 60px 24px;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+} 
+
+/* ===== GLASS BLACK FOOTER ===== */
+.footer {
+  background: rgba(15, 23, 42, 0.92);   /* deep glass black */
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 70px 8% 30px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-brand h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #f8fafc;
+}
+
+.footer-brand span {
+  color: #38bdf8; /* sky blue accent */
+}
+
+.footer-brand p {
+  color: #cbd5f5;
+  font-size: 15px;
+  max-width: 320px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #f8fafc;
+}
+
+.footer-links a,
+.footer-contact a {
+  display: block;
+  text-decoration: none;
+  color: #cbd5f5;
+  font-size: 14px;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #38bdf8;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+ /* About Css */
+ 
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .navbar {
+    padding: 16px 6%;
+  }
+
+  .features,
+  .services {
+    padding: 60px 6%;
+  }
+}

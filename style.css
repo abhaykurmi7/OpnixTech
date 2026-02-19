@@ -138,7 +138,7 @@ body {
 .about,
 .contact {
   padding: 40px 8%;
-  max-width: 800px;
+  max-width: 800px; 
 }
 
 .about p,
@@ -250,8 +250,89 @@ body {
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
- /* About Css */
- 
+ /* About Css */ 
+    .about-hero {
+      padding: 110px 8% 70px;
+      text-align: center;
+      background: linear-gradient(180deg, #f8fbff, #eaf3ff);
+    }
+
+    .about-hero h1 {
+      font-size: 44px;
+      margin-bottom: 16px;
+    }
+
+    .about-hero p {
+      max-width: 720px;
+      margin: auto;
+      font-size: 18px;
+      color: #475569;
+    }
+
+    /* ===== ABOUT CONTENT ===== */
+    .about-section {
+      padding: 90px 8%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about-block {
+      margin-bottom: 55px;
+    }
+
+    .about-block h2 {
+      font-size: 26px;
+      margin-bottom: 12px;
+      color: #0f172a;
+    }
+
+    .about-block p {
+      font-size: 16px;
+      color: #475569;
+      line-height: 1.7;
+    }
+
+    .about-block strong {
+      color: #2563eb;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      margin: 80px 8%;
+      padding: 80px 40px;
+      border-radius: 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #eaf3ff, #f8fbff);
+      border: 1px solid #e6efff;
+    }
+
+    .cta h2 {
+      font-size: 34px;
+      margin-bottom: 16px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      color: #475569;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 34px;
+      background: linear-gradient(135deg, #38bdf8, #2563eb);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 40px;
+      font-weight: 500;
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
 
 
 /* ===== RESPONSIVE ===== */
@@ -268,4 +349,373 @@ body {
   .services {
     padding: 60px 6%;
   }
+}
+
+/* ===== Projects Container ===== */
+
+.container {
+  
+}
+
+.project-card {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: #ffffff;
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 16px;
+  border: 1px solid #e6efff;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.project-card:hover {transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.35);
+}
+  
+
+.project-info {
+  flex: 1;
+}
+
+.tags {
+  margin-bottom: 14px;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 12px;
+  font-size: 11px;
+  border-radius: 20px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: 600;
+}
+
+.project-info h2 {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.project-info p {
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.tech-stack span {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.btn-project {
+  margin-top: 18px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* ===== PROJECT CARD ===== */
+.project-card {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.project-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ===== PROJECT INFO ===== */
+.project-info {
+  flex: 1;
+}
+
+.project-info h2 {
+  font-size: 28px;
+  margin: 16px 0;
+}
+
+.project-info p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* ===== PROJECT IMAGE ===== */
+.project-image {
+  flex: 1;
+  height: 260px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+  position: relative;
+}
+
+/* ===== CTA ===== */
+.cta-box {
+  margin: 100px 0;
+  padding: 70px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #fff;
+  text-align: center;
+}
+.btn-white {
+  background: #ffffff;
+  color: #2563eb;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: #ffffff;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+
+  .project-card {
+    gap: 24px;
+  }
+
+  .project-info h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .project-card,
+  .project-card.reverse {
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 220px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .cta-box {
+    padding: 50px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .project-image {
+    height: 180px;
+  }
+
+  .project-info h2 {
+    font-size: 22px;
+  }
+
+  .cta-box {
+    padding: 40px 18px;
+  }
+  .btn-white,
+  .btn-outline-white {
+    display: block;
+    width: 100%;
+    margin: 0 0 12px 0;
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+.mem-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.team-hero {
+    text-align: center;
+    padding: 80px 0 40px;
+}
+
+.badge {
+    background: #dbeafe;
+    color: var(--primary-blue);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.team-hero h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.team-hero h1 span { color: var(--primary-blue); }
+
+.team-hero p {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+/* Filter Navigation */
+.filter-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    border: 1px solid #e5e7eb;
+    background: var(--white);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn.active {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 60px 0 80px;
+}
+
+.member-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f3f4f6;
+}
+
+
+
+.img-container {
+    height: 320px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%); /* Matches the BW look in image */
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.member-info p {
+    color: var(--primary-blue);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* CTA Banner */
+.cta-banner {
+    background: linear-gradient(90deg, #1d4ed8, #2563eb);
+    border-radius: 16px;
+    padding: 60px 40px;
+    text-align: center;
+    color: var(--white);
+}
+
+.cta-banner h2 { font-size: 2.2rem; margin-bottom: 15px; }
+
+.cta-banner p { 
+    opacity: 0.9; 
+    max-width: 550px; 
+    margin: 0 auto 30px;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-white {
+    background: var(--white);
+    color: var(--primary-blue);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .team-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .team-hero h1 { font-size: 2.2rem; }
+    .cta-banner h2 { font-size: 1.8rem; }
+}
+
+@media (max-width: 480px) {
+    .team-grid { grid-template-columns: 1fr; }
+    .cta-actions { flex-direction: column; }
+    .filter-nav { gap: 8px; }
 }

@@ -1,21 +1,13 @@
+
 :root {
     --primary-blue: #2563eb;
-    --text-dark: #111827;
+   --text-dark: #111827;
     --text-muted: #6b7280;
     --bg-light: #f3f8ff; /* Soft blue gradient start */
     --white: #ffffff;
 }
 
-body {
-   font-family: 'Inter', sans-serif;
-    background: linear-gradient(to bottom, var(--bg-light), var(--white) 30%);
-    color: var(--text-dark);
-    background: #f8fbff;
-  line-height: 1.6;//
-  //background: #f8fbff;              /* clean white */
-  //color: #0f172a;                   /* deep blue text */
-  //line-height: 1.6;
-}
+
 
 .container {
     max-width: 1100px;
@@ -88,12 +80,15 @@ body {
 }
 
 .member-card {
-    border: 1px solid #e6efff;
     background: var(--white);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f3f4f6;
 }
+
+
+
 .img-container {
     height: 320px;
     overflow: hidden;
@@ -127,6 +122,7 @@ body {
     padding: 60px 40px;
     text-align: center;
     color: var(--white);
+margin-bottom: 50px;
 }
 
 .cta-banner h2 { font-size: 2.2rem; margin-bottom: 15px; }
